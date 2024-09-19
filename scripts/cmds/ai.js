@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = "Hey salut ʚɸɞ Métöushela ʚɸɞ 👋🏾! Belle journée, pas vrai ? Pose ta question 💭, je serai ravie de t'aider.💜✏";
+  let response = "Hey salut ʚɸɞ Iâr0 5anda ʚɸɞ 👋🏾! Belle journée, pas vrai ? Pose ta question 💭, je serai ravie de t'aider.💜✏";
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -45,12 +45,12 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
     if (!input) {
-      api.sendMessage(`Please provide a question or statement. `, event.threadID, event.messageID);
+      api.sendMessage(`Please provide a question or statement😋-Iaro Sanda. `, event.threadID, event.messageID);
       return;
     }
 
     const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-    api.sendMessage(` ⚜🌹...............................\n${response}\n⚜🌹...............................`, event.threadID, messageID);
+    api.sendMessage(` ⚜🌹...............................\n${response}\n⚜🌹RIS  ...............................`, event.threadID, messageID);
   },
   onChat: async function ({ event, message }) {
     const messageContent = event.body.trim().toLowerCase();
@@ -59,7 +59,7 @@ module.exports = {
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
       message.reply(`
         
-⚘𝗔𝗻𝗼𝘁𝗵𝗲𝗿-𝗠𝗲⊰♔⊱
+⚘IARO SANDA⊰♔⊱
 
 ⊰⊹⊱♡⊰⊹⊱♡⊰⊹⊱♡⊰⊹\n${response}\n
 ╰┈➤⊹⊱✫⊰⊹⊱✫⊰🍀
