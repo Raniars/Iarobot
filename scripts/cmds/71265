@@ -22,7 +22,7 @@ const Prefixes = [
   'Iaro',
   'ai',
   'iaro',
-  'ask',
+  '',
   'IaroSanda', 
 ];
 
